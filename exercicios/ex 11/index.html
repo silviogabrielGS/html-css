@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em html5</title>
+</head>
+<body>
+    <h1>visualização de imagem</h1>
+    <p>a imagem pode ser vista em qualquer tipo de tela , mas dependendo do tamanho da tela pode ter a barra de rolagem , e não queremos isso , vamos ver como fazemos para essas imagens se adaptarem
+    </p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="imagem/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagem/foto-m.png" type="image/png">
+        <img src="imagem/foto-g.png" alt="foto-flexivivel">
+    </picture>
+
+    <h1> audios </h1>
+    <p> agr ficou mais dacil de colocar audio nos sites com o html 5 , sem precisar de JavaScript ou plugins adicionais</p>
+
+    <audio controls loop preload="auto">
+        <source src="midias/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midias/happy-mistake.ogg" type="audio/ogg">  <!-- se houvesse esse audio em outro formato -->
+        <p>
+             seu navegador não suporta esse audio
+            <a href="midias/happy-mistake.mp3" download="happy-mistake.mp3" type="audio/mpeg"></a> <!-- se o seu navegador não suporta esse formato tem o link para download  -->
+        </p>
+    </audio>
+    
+</body>
+</html>
