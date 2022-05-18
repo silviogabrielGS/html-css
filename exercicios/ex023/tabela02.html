@@ -18,6 +18,12 @@
             
         }
 
+        caption {
+            background-color: lightgray;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
         thead{
             border:1px solid rgba(0, 0, 0, 0.325);
             background-color: lightgray;
@@ -45,10 +51,13 @@
     <h1>tabelas grandes</h1>
 
     <table>
+        <caption>
+            população dos estados
+        </caption>
         <thead>
             <tr>
-                <th> estado</th>
-                <th> população</th>
+                <th scope="col"> estado</th>
+                <th scope="col"> população</th>
             </tr>
         </thead>
         <tbody>
@@ -164,7 +173,7 @@
         </tbody>
         <tfoot>
             <tr>
-                    <td>total de habitantes</td>
+                    <th scope="row">total de habitantes</th>
                     <td><strong>210.147.125 </strong></td>
             </tr>
 
