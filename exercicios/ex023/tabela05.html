@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colgroup</title>
+    <style>
+           body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            font-size: 1.3em;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        th , td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .destaque1{
+            background-color: blue;
+
+        }
+
+        .destaque2{
+            background-color: red;
+        }
+
+        .destaque3{
+            background-color: yellowgreen;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>destacando colunas</h1>
+
+    <table>
+        <colgroup>
+            <col class="destaque1">
+            <col class="destaque2" span="2">
+            <col class="destaque3">
+
+        </colgroup>
+        <caption>
+            Cadastro
+        </caption>
+        <tr>
+            <th>nome</th>
+            <th>sexo</th>
+            <th>idade</th>
+            <th>profissão</th>
+        </tr>
+        <tr>
+            <td>Ana maria</td>
+            <td>F</td>
+            <td>26</td>
+            <td>jornalista</td>
+        </tr>
+        <tr>
+            <td>Toolio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>programador</td>
+        </tr>
+        <tr>
+            <td>juliana</td>
+            <td>F</td>
+            <td>37</td>
+            <td>contadora</td>
+        </tr>
+        <tr>
+            <td>Mariana</td>
+            <td>F</td>
+            <td>19</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>M</td>
+            <td>46</td>
+            <td>vendedor</td>
+        </tr>
+        <tr>
+            <td>Matheus</td>
+            <td>M</td>
+            <td>22</td>
+            <td>advogado</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
