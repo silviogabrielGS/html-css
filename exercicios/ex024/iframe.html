@@ -5,11 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iframes</title>
+    <style>
+        iframe {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
 </head>
 <body>
+    <!-- 
+        tamanho padrão do inframe 300x150
+        o que for colocado entre as tags é o que vai aparecer caso o navegador não reproduza o iframe
+        pode mudar o tamanho dentro da tag mas o CSS que prevalece na hierarquia
+        src , frameborder , scolling
+     -->
     <h1>adicionando iframes</h1>
     <p>
-        para acessar o youtube basta clicar <a href="https://www.youtube.com">aqui</a> ou acessar por <iframe src="https://www.youtube.com" frameborder="0"></iframe> alguns sites podem estar bloqueados por um sistema de segurança 
+        para acessar o youtube basta clicar <a href="https://www.youtube.com">aqui</a> ou acessar por <iframe src="https://www.youtube.com" frameborder="0">
+            <a href="https://www.youtube.com"> youtube </a>
+        </iframe> alguns sites podem estar bloqueados por um sistema de segurança 
     </p>
     
 </body>
