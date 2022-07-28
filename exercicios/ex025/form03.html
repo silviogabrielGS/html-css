@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1> média </h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <div>
+            <label for="inome"> Nome </label>
+            <input type="text" name="nome" id="inome" minlength="5" placeholder="nome completo" required autocomplete="name">
+        </div>
+
+        <div>
+            <label for="imedia"> Média</label>
+            <input type="number" name="media" id="imedia" required value="5" step="0.5" placeholder="o a 10" min="0" max="10" required>
+        </div>
+
+        <div>
+            <label for="ianoletivo"> Ano Letivo</label>
+            <input type="month" name="anoletivo" id="ianoletivo" required value="2022-07" >
+        </div>
+
+        <div>
+            <label for="idiadaprova"> Data Da Prova</label>
+            <input type="date" name="diadaprova" id="idiadaprova" required >
+        </div>
+
+        <div>   
+            <label for="ihoradaprova"> Hora da Prova</label>
+            <input type="time" name="hotadaprova" id="ihoradaprova" required>
+        </div>
+
+        <div>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </div>
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
