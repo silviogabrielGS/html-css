@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1> Teste de Formulário</h1>
+
+    <fieldset>
+        <legend> Dados Pessoais</legend>
+        <form action="cadastro.php" method="get">
+            <div>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required autocomplete="name" minlength="5" maxlength="20">
+            </div>
+            <br>
+            <div>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </div>
+             <br><!-- sim ,eu sei que é uma gambiarra , é só pra ficar mais prático o exercício  -->
+            <div>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" required autocomplete="tel" placeholder="(xx) xxxxx-xxxx">
+                <!-- estudar mais sobre RegEx -->
+            </div>
+            <br>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </form>
+    </fieldset>
+    
+</body>
+</html>
