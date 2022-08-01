@@ -16,15 +16,16 @@ body {
 
 h1 {
     text-align: center;
-    margin-bottom: 130px
+    margin-bottom: 70px;
+    font-size: 50px;
 
 }
 
 div {
-    width: 500px;
+    max-width: 700px;
     height: 400px;
     margin: auto;
-    margin-top: 270px;
+    margin-top: 240px;
     background-color: rgba(173, 173, 173, 0.973);
     padding: 10px;
     border-radius: 15px;
@@ -32,36 +33,46 @@ div {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    align-content: space-around;
-    flex-wrap: wrap;
-    
-   
+    align-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    gap: 20px;
 }
 
 label {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
-   
-   
-    }
+    font-size: 25px;
+
+}
 
 input {
-    border-radius: 5px;
-    border: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    padding: 5px;
+    font-size: 25px;
     text-align: center;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.247);
+    
+}
+
+input:focus{
+    outline: none;
     
 }
 
 #ienviar {
-    margin-left:75px;
+    border: none;
+    padding: 5px;
+    border-radius: 15px;
+
+}
+
+#ienviar:hover {
+    background-color: rgb(153, 153, 153);
+    cursor: pointer;
+    border: none;
 }
