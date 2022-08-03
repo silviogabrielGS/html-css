@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<style>
+div {
+    margin: 10px;
+}
+
+</style>
+<body>
+    <h1> Teste De Formulário</h1>
+
+    <form action="cadastro.php" method="post">
+
+        <div>
+            <label for="iestado"> Estado</label>
+            <select name="estado" id="iestado">
+                <optgroup label="sudeste">
+                    <option value="SP">Sâo Paulo</option>
+                    <option value="RJ">Rio De Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    </option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <label for="iprofissao"> Profissão</label>
+            <input type="text" name="profissao" id="iprofissao" list="listaprofissao">
+            <datalist id="listaprofissao">
+                <option value="ADM">Adiminstrador</option>
+                <option value="PROF">Professor</option>
+                <option value="DEV">Desemvolvedor</option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="itexto"> Digite Seu Texto</label> <br>
+            <textarea name="texto" id="itexto" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </div>
+
+    </form>
+    
+</body>
+</html>
