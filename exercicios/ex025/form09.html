@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        div {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Formulário</h1>
+
+    <form action="cadastro.php" method="get">
+        <div>
+            <label for="irange"> numero</label>
+            <input type="range" name="range" id="irange" min="0" max="10" required oninput="numero.innerHTML = Number(irange.value)">
+            <output id="numero">5</output>
+        </div>
+
+        <input type="submit" value="enviar"> 
+        <input type="reset" value="limpar">
+
+    </form>
+    
+</body>
+</html>
