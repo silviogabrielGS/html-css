@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* estilo para a tela */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family:  Verdana, sans-serif;
+}
+header {
+    background-color: lightgray;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+menu {
+    background-color: gray;
+
+}
+
+li {
+    color: #ffffff;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 20px;
+    background-color: rgb(63, 63, 63);
+}
+
+article {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 600px;
+    background-color: lightgray;
+    height: 100vh;
+
+}
+
+h2 {
+    text-align: center;
+}
+
